@@ -9,7 +9,7 @@ class Config:
     API_HASH = environ.get("API_HASH", "5223c65e405cc3f52fa23ddd070f4c35")
     BOT_TOKEN = environ.get("BOT_TOKEN", "7739736035:AAHt078P2xOzHudE3sRDgOJOz3sbeU4NAmI") 
     BOT_SESSION = environ.get("BOT_SESSION", "vjbot") 
-    DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aaka8h:mcFcvfzlNoErXqDo@cluster0.im2pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://aethics9:wR50ot7aivZFkvRr@cluster0.mxvvb7u.mongodb.net/?retryWrites=true&w=majority")
     DATABASE_NAME = environ.get("DATABASE_NAME", "vj-forward-bot")
     BOT_OWNER = int(environ.get("BOT_OWNER", "5983253591"))
 
