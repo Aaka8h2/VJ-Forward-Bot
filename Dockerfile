@@ -1,4 +1,4 @@
-FROM python:3.10.8-slim-bookworm
+FROM python:3.10-slim
 
 # Install system dependencies
 RUN apt update && apt upgrade -y && \
@@ -16,5 +16,5 @@ WORKDIR /VJ-Forward-Bot
 # Copy project files
 COPY . .
 
-# Run gunicorn and main.py
-CMD gunicorn app:app & python3 main.py
+# Start both gunicorn and main.py
+CMD ["sh", "-c", "gunicorn app:app & python3 main.py"]
